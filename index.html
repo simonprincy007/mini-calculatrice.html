@@ -1,19 +1,20 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mini Calculatrice</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-<div class="calculatrice">
-<div class="ecran" id="display">0</div>
-<div class="boutons">
-<!-- Les boutons seront ajoutés par les collaborateurs -->
-</div>
-</div>
-<script src="script.js"></script>
+    <button onclick="appendNumber('1')">1</button>
+<button onclick="appendNumber('2')">2</button>
+<button onclick="appendNumber('3')">3</button>
+<button onclick="setOperation('-')">-</button>
+<button onclick="appendNumber('0')">0</button>
+<button onclick="appendNumber('.')">.</button>
+<button onclick="setOperation('/')">÷</button>
+<button onclick="reset()" class="reset">AC</button>
+<button onclick="calculate()" class="equals">=</button>
 </body>
 </html>
